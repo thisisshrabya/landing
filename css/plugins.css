@@ -2,35 +2,11 @@
   [CSS Index - plugins]
   
   ---
+  */
+
+
+
   
-  Template Name: Gentex - One Page Portfolio Template
-  Author:  ex-nihilo
-  Version: 1.0
-*/
-
-/* 
-  1. Bootstrap v3.3.7
-  2. Swiper v3.4.2
-  3. Owl Carousel v2.2.0
-  4. Slick v1.6.0
-    4.1. Slick Theme v1.6.0
-  5. Ionicons v2.0.0
-  6. fullPage v2.9.4
-  7. Magnific Popup v1.1.0
-  8. Lity v2.2.2
-  9. jquery.mb.YTPlayer v3.1.4
-*/
-
-/* 1. Bootstrap v3.3.7 */
-
-/*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-
 html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
