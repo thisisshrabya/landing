@@ -1,279 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>SHRABYA DAHAL</title>
-    <meta name="description" content="This is Shrabya Dahal's official platform for sharing personal photographs and videos. Here, you will find a curated collection that reflects her journey, experiences, and creative expressions." />
-    <link rel="canonical" href="https://shrabyadahal.com.np/">
-    <meta name='robots' content='max-image-preview:large' />
-    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-    <link rel="shortcut icon" href="https://cdn.shrabyadahal.com.np/cGF0aGl2YXJh-main/landingpage/image/retina/favico.png" type="image/x-icon">
-    <meta name="google-site-verification" content="mUk1L11yn67RDtyRSrnZvXuiH3FNuGMHP8O_XyKzILs" />
-    <meta name="keywords" content="Shrabya, Shrabya Dahal, shrabyadahal">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <meta name="author" content="Shrabya Dahal">
-    <meta name="google-site-verification" content="yEjKqWutogr1aTJTT965t05Br8WBFxuBDn_I8BCQ2UE">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-    <meta charset="utf-8">
-    
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Shrabya" />
-    <meta property="og:title" content="SHRABYA DAHAL" />
-    <meta property="og:description" content=" This is Shrabya Dahal's official platform for sharing personal photographs and videos. Here, you will find a curated collection that reflects her journey, experiences, and creative expressions. " />
-    <meta property="og:image" content="https://cdn.shrabyadahal.com.np/cGF0aGl2YXJh-main/landingpage/image/retina/favico.png" />
-    <meta property="og:image" content="https://cdn.shrabyadahal.com.np/cGF0aGl2YXJh-main/sublandibgpage/1236adsa4d/asewch5s5s2s22/img/TmV3Zm9sZGVyXw/image/IMG-20240126-WA0018.jpg" />
-    <meta property="og:url" content="https://land.shrabyadahal.com.np/" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.shrabyadahal.com.np/cGF0aGl2YXJh-main/landingpage/style/main.css">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LMNTXDC6QV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LMNTXDC6QV');
-</script>
-
-    
-    
-    <!-- google fonts start -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7COswald:300,400,700" rel="stylesheet" type="text/css">
-    <!-- google fonts end -->
-    
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-N5LHK9VC');</script>
-        <!-- End Google Tag Manager -->
-
-
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just a moment…</title>
+    <style>
+        /* Ultra-clean reset */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { width: 100%; height: 100%; overflow: hidden; background: #000; font-family: 'Cinzel', 'Georgia', serif; }
+       
+        /* Canvas for Diwali Atasbaji - Full Wild Screen */
+        #firework-canvas { position: fixed; inset: 0; z-index: 1; }
+        
+        /* Card Container - Perfect Center */
+        .card-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            pointer-events: none;
+            width: 100%;
+            max-width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* COMPLETELY TRANSPARENT CARD - Invisible but Present */
+        .card {
+            background: transparent !important;
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+            border: none !important;
+            border-radius: 0 !important;
+            padding: 3rem 4rem;
+            text-align: center;
+            box-shadow: none !important;
+            opacity: 0;
+            transform: scale(0.92) translateY(30px);
+            animation: cardRise 3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            width: fit-content;
+            max-width: 90vw;
+        }
+        
+        .card h1 {
+            font-size: clamp(2.6rem, 12vw, 10rem);
+            font-weight: 100;
+            letter-spacing: 0.24em;
+            text-transform: uppercase;
+            /* Full 13-color gradient */
+            background: linear-gradient(
+                90deg,
+                #FFD700, /* Gold */
+                #C0C0C0, /* Silver */
+                #FFFF00, /* Yellow */
+                #FF0000, /* Red */
+                #9370DB, /* Purple */
+                #FFA500, /* Orange */
+                #00FF7F, /* Green */
+                #0000FF, /* Blue */
+                #FFFFFF, /* White */
+                #8B4513, /* Brown */
+                #00CED1, /* Light Blue */
+                #FF69B4, /* Pink */
+                #000000, /* Black */
+                #FFD700  /* Gold (loop back) */
+            );
+            background-size: 800%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: colorFlow 12s linear infinite;
+            margin-bottom: 0.3em;
+            text-shadow:
+                0 0 50px rgba(255, 215, 0, 0.6),
+                0 0 100px rgba(255, 20, 150, 0.5),
+                0 0 150px rgba(0, 255, 255, 0.4),
+                0 0 200px rgba(255, 105, 180, 0.3);
+        }
+        
+        .card p {
+            font-size: clamp(1rem, 3vw, 2rem);
+            color: rgba(255, 255, 255, 0.9);
+            letter-spacing: 0.38em;
+            font-weight: 300;
+            opacity: 0;
+            animation: fadeIn 2s ease-out 2s forwards;
+            background: linear-gradient(90deg, #FFD700, #C0C0C0, #FFFFFF, #FFFF00, #FF69B4, #FFD700);
+            background-size: 400%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 6s linear infinite;
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+        }
+        
+        @keyframes cardRise {
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        @keyframes colorFlow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 800% 50%; }
+        }
+        @keyframes shimmer {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 400% 50%; }
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        
+        /* RESPONSIVE WEB DESIGN */
+        @media (min-width: 2560px) {
+            .card { padding: 6rem 8rem; }
+            .card h1 { letter-spacing: 0.3em; }
+        }
+        @media (min-width: 1440px) and (max-width: 2559px) {
+            .card { padding: 5rem 7rem; }
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+            .card { padding: 4rem 6rem; }
+            .card h1 { letter-spacing: 0.2em; }
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .card { padding: 3.5rem 5rem; }
+            .card h1 { letter-spacing: 0.18em; }
+            .card p { letter-spacing: 0.3em; }
+        }
+        @media (min-width: 480px) and (max-width: 767px) {
+            .card { padding: 2.8rem 4rem; }
+            .card h1 {
+                letter-spacing: 0.15em;
+                font-size: clamp(2.4rem, 11vw, 7rem);
+            }
+            .card p {
+                letter-spacing: 0.25em;
+                font-size: clamp(0.9rem, 2.6vw, 1.6rem);
+            }
+        }
+        @media (max-width: 479px) {
+            .card { padding: 2rem 3rem; }
+            .card h1 {
+                letter-spacing: 0.12em;
+                font-size: clamp(2rem, 10vw, 5rem);
+            }
+            .card p {
+                letter-spacing: 0.2em;
+                font-size: clamp(0.8rem, 2.4vw, 1.4rem);
+            }
+        }
+        @media (orientation: portrait) and (max-width: 767px) {
+            .card { padding: 2.5rem 3.5rem; }
+        }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .card h1, .card p { -webkit-text-stroke: 0.5px rgba(255,255,255,0.15); }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-
-         <!-- Google Tag Manager (noscript) -->
-         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5LHK9VC"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-            <!-- End Google Tag Manager (noscript) -->
-
-
-    <!-- Luxury Navigation -->
-    <nav class="luxury-nav">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="luxe">SHRABYA</span>
-                <span class="galleria">DAHAL</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">HOME</a></li>
-                <li><a href="#gallery">GALLERY</a></li>
-                <li><a href="#video-showcase">VIDEO SHOWCASE</a></li>
-                <li><a href="#about">ABOUT US</a></li>
-                <li><a href="#contact">CONTACT US</a></li>
-            </ul>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section with Auto-Slider -->
-    <section class="hero" id="home">
-        <div class="slider-container">
-            <div class="slider-track">
-                <!-- Slides will be added dynamically via JS -->
-            </div>
-            <div class="slider-nav">
-                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
-                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
-            </div>
-            <div class="slider-indicators"></div>
-        </div>
-        <div class="hero-content">
-            <h1>EXPERIENCE VISUAL OPULENCE</h1>
-            <p>Immerse yourself in my curated collection of ultra-high-definition media</p>
-            <a href="#gallery" class="explore-btn">EXPLORE COLLECTION</a>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="gallery-section" id="gallery">
-        <div class="section-header">
-            <h2>PREMIUM MEDIA COLLECTION</h2>
-            <p>Browse our curated selection of high-quality photos and videos</p>
-        </div>
-        
-        <div class="filter-controls">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="photo">Photos</button>
-            <button class="filter-btn" data-filter="video">Videos</button>
-            <button class="filter-btn" data-filter="nature">Nature</button>
-            <button class="filter-btn" data-filter="urban">Urban</button>
-            <button class="filter-btn" data-filter="portrait">Portrait</button>
-            <button class="filter-btn" data-filter="ultraluxury">Ultra Luxury</button>
-        </div>
-        
-        <div class="masonry-gallery">
-            <!-- Gallery items will be loaded dynamically -->
-        </div>
-        
-        <div class="load-more">
-            <button id="load-more-btn">LOAD MORE</button>
-            <button id="load-less-btn">LOAD LESS</button>
-        </div>
-    </section>
-
-    <!-- Video Showcase -->
-    <section class="video-showcase" id="video-showcase">
-        <div class="section-header">
-            <h2>VIDEO</h2>
-            <p>Experience my premium video collection</p>
-        </div>
-        <div class="video-container">
-            <video id="featured-video" autoplay loop muted>
-                <source src="https://cdn.shrabyadahal.com.np/cGF0aGl2YXJh-main/sublandibgpage/1236adsa4d/asewch5s5s2s22/vid/79587735/IMG_14.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="video-controls">
-                <button id="play-pause"><i class="fas fa-pause"></i></button>
-                <button id="fullscreen"><i class="fas fa-expand"></i></button>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section" id="about">
-        <div class="section-header">
-            <h2>About Us
-            </h2>
-            <p>A legacy of visual excellence since 2024</p>
-        </div>
-        
-        <div class="about-container">
-            <div class="about-text">
-                <h2>THE SHRABYA DAHAL</h2>
-                <p>Hi, I’m Shrabya Dahal!</p>
-                <p>I’m a B.Sc. Biology student with a passion for exploring the world. Through my journey, I share premium travel media, capturing the beauty of nature, culture, and adventure. Join me as I blend science and travel into unforgettable stories.</p>
-                
-            </div>
-            <div class="about-image">
-                <img src="https://cdn.shrabyadahal.com.np/cGF0aGl2YXJh-main/sublandibgpage/1236adsa4d/asewch5s5s2s22/img/TmV3Zm9sZGVyXw/image/IMG-20240127-WA0039.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Our Vision">
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <div class="section-header">
-            <h2>GET IN TOUCH</h2>
-            <!--<p>We'd love to hear from you</p>-->
-        </div>
-        
-        <div class="contact-container">
-            <div class="contact-info">
-                <h2>CONNECT WITH US</h2>
-                <!--<p>Have questions about our collections or wish to contribute? Our team is here to assist you promptly.</p>-->
-                
-                <div class="contact-details">
-                    <div class="contact-detail">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Kathmandu, Bagmati</span>
-                    </div>
-                    <div class="contact-detail">
-                        <i class="fas fa-phone"></i>
-                        <span>+977 (XXX) XXX-XXX</span>
-                    </div>
-                    <div class="contact-detail">
-                        <i class="fas fa-envelope"></i>
-                        <span>info@shrabyadahal.com.np</span>
-                    </div>
-                </div>
-                
-                <div class="social-links">
-                    <a href="https://www.instagram.com/shrabyadahal"><i class="fab fa-instagram"></i></a>
-                    
-                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
+    <canvas id="firework-canvas"></canvas>
+    
+    <!-- DIWALI ATASBAJI CARD -->
+    <div class="card-container">
+        <div class="card">
+            <h1>Just a moment...</h1>
             
-            <div class="contact-form">
-                <form id="contactForm" action="mailto:info@shrabyadahal.com" method="post" enctype="text/plain">
-                    <div class="form-group">
-                        <label for="fullname">Full Name</label>
-                        <input type="text" id="fullname" name="fullname" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">SEND MESSAGE</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Luxury Footer -->
-    <footer class="luxury-footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <span class="luxe">SHRABYA</span>
-                <span class="galleria">DAHAL</span>
-            </div>
-            <div class="footer-links">
-                <div class="link-column">
-                    <h3>Explore</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#video-showcase">Video Showcase</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="link-column">
-                    <h3>Connect</h3>
-                    <div class="social-links">
-                    <a href="https://www.instagram.com/shrabyadahal"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>© 2025 Shrabya Dahal. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Lightbox Modal -->
-    <div class="lightbox" id="lightbox">
-        <div class="lightbox-content">
-            <span class="close-lightbox">×</span>
-            <div class="lightbox-media-container">
-                <!-- Media will be inserted here -->
-            </div>
-            <div class="lightbox-controls">
-                <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
-                <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
-            </div>
-            <div class="lightbox-caption"></div>
         </div>
     </div>
 
-    <script src="https://cdn.shrabyadahal.com.np/cGF0aGl2YXJh-main/landingpage/javascript/main.js"></script>
-    <script src="https://cdn.shrabyadahal.com.np/cGF0aGl2YXJh-main/landingpage/javascript/security.js"></script>
+    <script>
+        // DIWALI ATASBAJI - Full Wild Fireworks
+        const canvas = document.getElementById('firework-canvas');
+        const ctx = canvas.getContext('2d');
+        let width, height;
+        let fireworks = [];
+        let animationId;
+
+        // FULL 13-COLOR DIWALI PALETTE
+        const colors = [
+            '#FFD700', // Gold
+            '#C0C0C0', // Silver
+            '#FFFF00', // Yellow
+            '#FF0000', // Red
+            '#9370DB', // Purple
+            '#FFA500', // Orange
+            '#00FF7F', // Green
+            '#0000FF', // Blue
+            '#FFFFFF', // White
+            '#8B4513', // Brown
+            '#00CED1', // Light Blue
+            '#FF69B4', // Pink
+            '#000000'  // Black (for contrast trails)
+        ];
+
+        const resize = () => {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        };
+
+        class Firework {
+            constructor() { this.reset(); }
+            reset() {
+                this.x = width * 0.1 + Math.random() * width * 0.8;
+                this.y = height;
+                this.targetY = height * 0.05 + Math.random() * height * 0.4;
+                this.vy = -18 - Math.random() * 16;
+                this.exploded = false;
+                this.particles = [];
+                this.colorSet = this.randomColorSet();
+                this.trail = [];
+            }
+            randomColorSet() {
+                const shuffled = [...colors].sort(() => 0.5 - Math.random());
+                return shuffled.slice(0, 4 + Math.floor(Math.random() * 4)); // 4–7 colors per burst
+            }
+            update() {
+                if (!this.exploded) {
+                    this.vy += 0.48;
+                    this.y += this.vy;
+                    this.trail.push({ x: this.x, y: this.y, alpha: 1 });
+                    if (this.trail.length > 25) this.trail.shift();
+                    if (this.vy >= 0 || this.y >= this.targetY) this.explode();
+                } else {
+                    this.particles.forEach(p => p.update());
+                    this.particles = this.particles.filter(p => p.life > 0);
+                }
+            }
+            explode() {
+                this.exploded = true;
+                const count = 120 + Math.floor(Math.random() * 200);
+                const power = 11 + Math.random() * 10;
+
+                // Main burst
+                for (let i = 0; i < count; i++) {
+                    const angle = (Math.PI * 2 * i) / count + (Math.random() - 0.5) * 0.3;
+                    const velocity = power * (0.6 + Math.random() * 0.7);
+                    const color = this.colorSet[Math.floor(Math.random() * this.colorSet.length)];
+                    this.particles.push(new Particle(this.x, this.y, velocity, angle, color));
+                }
+
+                // Golden & Silver Sparkles
+                for (let i = 0; i < 50; i++) {
+                    const angle = Math.random() * Math.PI * 2;
+                    const velocity = power * 2.5 + Math.random() * 3;
+                    const sparkleColor = Math.random() < 0.6 ? '#FFD700' : '#C0C0C0';
+                    this.particles.push(new Particle(this.x, this.y, velocity, angle, sparkleColor, true));
+                }
+            }
+            draw() {
+                if (!this.exploded) {
+                    // Trail
+                    this.trail.forEach((p, i) => {
+                        const alpha = (i / this.trail.length) * 0.95;
+                        const size = 2 + (i / this.trail.length) * 3;
+                        ctx.beginPath();
+                        ctx.arc(p.x, p.y, size, 0, Math.PI * 2);
+                        ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+                        ctx.shadowBlur = 18;
+                        ctx.shadowColor = '#fff';
+                        ctx.fill();
+                        ctx.shadowBlur = 0;
+                    });
+                    // Rocket head
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, 6, 0, Math.PI * 2);
+                    const grad = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, 6);
+                    grad.addColorStop(0, '#ffffff');
+                    grad.addColorStop(0.6, this.colorSet[0]);
+                    grad.addColorStop(1, this.colorSet[1] || this.colorSet[0]);
+                    ctx.fillStyle = grad;
+                    ctx.shadowBlur = 35;
+                    ctx.shadowColor = this.colorSet[0];
+                    ctx.fill();
+                    ctx.shadowBlur = 0;
+                } else {
+                    this.particles.forEach(p => p.draw());
+                }
+            }
+        }
+
+        class Particle {
+            constructor(x, y, velocity, angle, color, isSparkle = false) {
+                this.x = x; this.y = y;
+                this.vx = Math.cos(angle) * velocity;
+                this.vy = Math.sin(angle) * velocity;
+                this.color = color;
+                this.life = 100;
+                this.decay = 0.86 + Math.random() * 0.12;
+                this.isSparkle = isSparkle;
+                this.size = isSparkle ? 1.8 : 2.8 + Math.random() * 3.5;
+                this.twinkle = 0;
+            }
+            update() {
+                this.vy += 0.26;
+                this.vx *= 0.975;
+                this.vy *= 0.975;
+                this.x += this.vx;
+                this.y += this.vy;
+                this.life *= this.decay;
+                if (this.isSparkle) this.twinkle = Math.sin(Date.now() * 0.01) * 0.5 + 0.5;
+            }
+            draw() {
+                const opacity = this.life / 100;
+                ctx.save();
+                ctx.globalAlpha = opacity;
+
+                if (this.isSparkle) {
+                    const scale = 1 + this.twinkle * 0.5;
+                    ctx.scale(scale, scale);
+                    const points = 5, outer = this.size * 3.2, inner = this.size * 0.8;
+                    ctx.beginPath();
+                    for (let i = 0; i < points * 2; i++) {
+                        const r = i % 2 === 0 ? outer : inner;
+                        const a = (Math.PI / points) * i;
+                        const px = (this.x + Math.cos(a) * r) / scale;
+                        const py = (this.y + Math.sin(a) * r) / scale;
+                        ctx[i === 0 ? 'moveTo' : 'lineTo'](px, py);
+                    }
+                    ctx.closePath();
+                    ctx.fillStyle = this.color;
+                    ctx.shadowBlur = 28;
+                    ctx.shadowColor = '#ffffff';
+                } else {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fillStyle = this.color;
+                    ctx.shadowBlur = 20;
+                    ctx.shadowColor = this.color;
+                }
+                ctx.fill();
+                ctx.restore();
+            }
+        }
+
+        const launchFirework = () => {
+            if (Math.random() < 0.97) fireworks.push(new Firework());
+        };
+
+        const handleInput = (e) => {
+            e.preventDefault();
+            const rect = canvas.getBoundingClientRect();
+            const x = (e.clientX || e.touches[0].clientX) - rect.left;
+            const y = (e.clientY || e.touches[0].clientY) - rect.top;
+            const fw = new Firework();
+            fw.x = x;
+            fw.y = height;
+            fw.targetY = y;
+            fw.vy = -25 - Math.random() * 15;
+            fireworks.push(fw);
+        };
+
+        const animate = () => {
+            // Soft trail fade
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
+            ctx.fillRect(0, 0, width, height);
+
+            // Random auto-launch
+            if (Math.random() < 0.06) launchFirework();
+
+            fireworks.forEach((fw, i) => {
+                fw.update();
+                fw.draw();
+                if (fw.exploded && fw.particles.length === 0) {
+                    fireworks.splice(i, 1);
+                }
+            });
+
+            animationId = requestAnimationFrame(animate);
+        };
+
+        // Events
+        window.addEventListener('resize', resize);
+        canvas.addEventListener('click', handleInput);
+        canvas.addEventListener('touchstart', handleInput, { passive: false });
+
+        window.addEventListener('load', () => {
+            resize();
+            setTimeout(() => fireworks.push(new Firework()), 800);
+            animate();
+        });
+
+        window.addEventListener('beforeunload', () => cancelAnimationFrame(animationId));
+    </script>
 </body>
 </html>
